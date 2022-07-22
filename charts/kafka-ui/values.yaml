@@ -83,7 +83,8 @@ securityContext:
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
+  #type: ClusterIP
+  service.type=NodePort
   port: 80
   # if you want to force a specific nodePort. Must be use with service.type=NodePort
   # nodePort:
